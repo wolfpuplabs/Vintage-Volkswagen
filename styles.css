@@ -62,8 +62,15 @@ section p {
     margin: 0 0 30px;
 }
 
-section img {
-    max-width: 100%;
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 30%;
     height: auto;
     border-radius: 10px;
 }
