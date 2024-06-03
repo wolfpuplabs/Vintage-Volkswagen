@@ -1,24 +1,29 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.close');
-    const thumbnails = document.querySelectorAll('.thumbnail');
+let slideIndex = 1;
 
-    thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', function() {
-            const largeImgSrc = this.getAttribute('data-large');
-            lightboxImg.src = largeImgSrc;
-            lightbox.style.display = 'block';
-        });
-    });
+function openLightbox() {
+    document.getElementById('lightbox').style.display = 'block';
+    showSlides(slideIndex);
+}
 
-    closeBtn.addEventListener('click', function() {
-        lightbox.style.display = 'none';
-    });
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
 
-    lightbox.addEventListener('click', function(e) {
-        if (e.target !== lightboxImg) {
-            lightbox.style.display = 'none';
-        }
-    });
-});
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName('lightbox-slide');
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+    slides[slideIndex-1].style.display = 'block';
+}
