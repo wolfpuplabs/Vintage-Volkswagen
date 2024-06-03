@@ -3,68 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage Volkswagen T-Shirt</title>
+    <title>AR Sticker Collection</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="logo.png" alt="Logo" class="logo">
-            <h1>Vintage Volkswagen T-Shirt</h1>
-            <p>Experience the nostalgia with our classic Volkswagen series T-Shirt.</p>
-            <a href="https://tokopedia.link/Ggz6a6cG6Jb" class="btn">Shop Now</a>
-        </div>
+        <h1>Discover Our Cutting-Edge AR Sticker Collection</h1>
+        <p>Elevate Your Sticker Game with Augmented Reality!</p>
     </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Our T-Shirt</h2>
-            <p>Our Vintage Volkswagen series T-shirt is made from high-quality materials, offering both comfort and style. Perfect for car enthusiasts and fans of the iconic Volkswagen.</p>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section id="video">
-        <div class="container">
-            <h2>Watch Our T-Shirt in Action</h2>
-            <video controls>
-                <source src="tshirt-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
-    <section id="design">
-        <div class="container">
-            <h2>Design Preview</h2>
+    <main>
+        <section class="intro">
+            <p>Welcome to the future of stickers! Our exclusive AR Sticker Collection combines traditional sticker fun with the latest in augmented reality technology. Perfect for kids, teens, and adults alike, these stickers come to life right before your eyes, transforming any surface into an interactive experience.</p>
+        </section>
+        <section class="features">
+            <h2>Why Choose Our AR Stickers?</h2>
+            <ul>
+                <li><strong>Interactive Fun:</strong> Watch your stickers animate and interact with your surroundings through your smartphone or tablet.</li>
+                <li><strong>Educational Content:</strong> Our AR stickers aren’t just fun—they’re informative! Each design is packed with educational content, making learning an adventure.</li>
+                <li><strong>High-Quality Designs:</strong> Crafted by top artists, our stickers are vibrant, durable, and eye-catching, ensuring they stand out on any surface.</li>
+                <li><strong>Easy to Use:</strong> Simply apply the sticker, scan it with our free app, and watch the magic unfold. It’s that easy!</li>
+            </ul>
+        </section>
+        <section class="usage">
+            <h2>Perfect for All Ages and Occasions</h2>
+            <p>Whether you’re decorating your personal items, jazzing up your workspace, or looking for a unique gift, our AR stickers are ideal for all occasions. They’re perfect for:</p>
+            <ul>
+                <li><strong>School Projects:</strong> Make learning interactive and fun.</li>
+                <li><strong>Party Favors:</strong> Give your guests a memorable gift.</li>
+                <li><strong>Personal Use:</strong> Add a touch of magic to your notebooks, laptops, and more.</li>
+                <li><strong>Corporate Gifts:</strong> Impress clients with innovative, branded merchandise.</li>
+            </ul>
+        </section>
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Apply the Sticker:</strong> Choose your favorite design and stick it to any surface.</li>
+                <li><strong>Download the App:</strong> Get our free app from the App Store or Google Play.</li>
+                <li><strong>Scan and Enjoy:</strong> Open the app, scan your sticker, and watch it come to life!</li>
+            </ol>
+        </section>
+        <section class="cta">
+            <h2>Join the AR Revolution</h2>
+            <p>Don’t miss out on the latest trend in interactive merchandise. Elevate your sticker game and amaze your friends with our AR Sticker Collection. Explore the endless possibilities of augmented reality today!</p>
+            <a href="#shop" class="btn">Shop the Collection</a>
+        </section>
+        <section id="shop" class="shop">
+            <h2>Shop the Collection</h2>
             <div class="gallery">
-                <img src="super-beetle-tshirt1.jpg" alt="Vintage Volkswagen Super Beetle T-Shirt - Front View" onclick="openLightbox();currentSlide(1)">
-                <img src="super-beetle-tshirt2.jpg" alt="Vintage Volkswagen Super Beetle T-Shirt - Back View" onclick="openLightbox();currentSlide(2)">
-                <img src="super-beetle-tshirt3.jpg" alt="Vintage Volkswagen Super Beetle T-Shirt - Close-up" onclick="openLightbox();currentSlide(3)">
+                <div class="item">
+                    <img src="sticker1.jpg" alt="Sticker 1" class="thumbnail" data-large="sticker1-large.jpg">
+                    <h3>Sticker 1</h3>
+                </div>
+                <div class="item">
+                    <img src="sticker2.jpg" alt="Sticker 2" class="thumbnail" data-large="sticker2-large.jpg">
+                    <h3>Sticker 2</h3>
+                </div>
+                <div class="item">
+                    <img src="sticker3.jpg" alt="Sticker 3" class="thumbnail" data-large="sticker3-large.jpg">
+                    <h3>Sticker 3</h3>
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <div id="lightbox" class="lightbox">
-        <span class="close" onclick="closeLightbox()">&times;</span>
-        <div class="lightbox-content">
-            <img class="lightbox-slide" src="super-beetle-tshirt1.jpg">
-            <img class="lightbox-slide" src="super-beetle-tshirt2.jpg">
-            <img class="lightbox-slide" src="super-beetle-tshirt3.jpg">
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
-        </div>
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
     </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Vintage T-Shirts. All rights reserved.</p>
-        </div>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
