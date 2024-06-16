@@ -26,10 +26,13 @@ function showSlides(n) {
         slides[i].style.display = 'none';
     }
     slides[slideIndex-1].style.display = 'block';
- function handleFiles(event) {
+}
+
+function handleFiles(event) {
             const file = event.target.files[0];
             const url = URL.createObjectURL(file);
             const modelViewer = document.getElementById('uploadedModel');
             modelViewer.src = url;
-    }
+        }
+
 }
