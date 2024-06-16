@@ -78,6 +78,14 @@
     </footer>
 
     <script src="script.js">  
-    
+        
+    <script>
+        function handleFiles(event) {
+            const file = event.target.files[0];
+            const url = URL.createObjectURL(file);
+            const modelViewer = document.getElementById('uploadedModel');
+            modelViewer.src = url;
+        }
+    </script>
 </body>
 </html>
