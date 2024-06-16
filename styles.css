@@ -102,6 +102,17 @@ section p {
 .gallery img:hover {
     transform: scale(1.05);
 }
+.product {
+    margin-bottom: 2rem;
+}
+.product model-viewer, #uploadedModel {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+}
+.uploader input {
+    margin: 1rem 0;
+}
 
 footer {
     background: #333;
